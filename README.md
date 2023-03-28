@@ -9,9 +9,16 @@
 - Microsoft Store -> PowerToys -> remap SHIFT to CTRL
 
 
-## VSCode keybindings
-- VSCode - to make sure Ctrl + W VIM bindings work make sure that `extension.vim_ctrl+w` actually has Ctrl + W keybinding.
-- Focus terminal keybinding `oem_5` which is the wierd `1/2` below ESC on nordic keyboard.
+## VSCode
+Non default settings go here on Windows
+- $APPDATA/Code/User/keybindings.json
+- $APPDATA/Code/User/settings.json
+
+Here on Ubuntu
+- $HOME/.config/Code/User/settings.json
+- $HOME/.config/Code/User/settings.json
+
+
 ### Ubuntu
 `~/.config/nvim/init.vim`
 
