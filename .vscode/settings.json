@@ -1,0 +1,29 @@
+{
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSaveMode": "file",
+  "python.languageServer": "Pylance",
+  "python.formatting.provider": "black",
+  "python.defaultInterpreterPath": "${env:HOME}/miniconda3/bin/python",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.ignoreRecommendations": true,
+  "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "security.workspace.trust.untrustedFiles": "open",
+  "vim.useSystemClipboard": true,
+  "vim.vimrc.enable": true,
+  "vim.smartRelativeLine": true,
+  "vim.handleKeys": {
+    "<C-f>": false,
+    "<C-s>": false,
+    "<C-k>": false,
+    "<C-b>": false
+  },
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+}

@@ -6,6 +6,12 @@
 - plug `~/AppData/Local/nvim/autoload`
 - installed plugins `~/AppData/Local/nvim-data`
 
+- Microsoft Store -> PowerToys -> remap SHIFT to CTRL
+
+
+## VSCode keybindings
+- VSCode - to make sure Ctrl + W VIM bindings work make sure that `extension.vim_ctrl+w` actually has Ctrl + W keybinding.
+- Focus terminal keybinding `oem_5` which is the wierd `1/2` below ESC on nordic keyboard.
 ### Ubuntu
 `~/.config/nvim/init.vim`
 
