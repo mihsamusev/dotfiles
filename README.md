@@ -29,7 +29,12 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
-## First xxxxA
+## From fresh terminal
+```
+sudo apt update
+sudo apt install git curl bat fzf build-essential
+```
+
 ## Console and editors 
 - nvim
     - Plug usually in $HOME/.local/share/nvim/site/autoload/plug.vim
