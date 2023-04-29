@@ -32,6 +32,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 ## Console and editors 
 - nvim
+    - Plug usually in $HOME/.local/share/nvim/site/autoload/plug.vim
+    - plugins themself in $/.local/share/nvim/plugged
 - batcat
 - fzf
 
