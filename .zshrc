@@ -103,7 +103,18 @@ alias cat="batcat"
 alias vim_cheat_sheet="cat ~/cheat_sheets/vim.*"
 alias cat-zshrc="cat ~/.zshrc"
 alias cat-bashrc="cat ~/.bashrc"
-
+alias nvim-config="nvim $HOME/.config/nvim/init.vim"
+alias fzf="fzf --multi \
+--height=50% \
+--margin=5%,2%,2%,5% \
+--layout=reverse-list \
+--border=rounded \
+--info=inline \
+--prompt='$>' \
+--pointer='→' \
+--marker='♡' \
+--header='CTRL-c or ESC to quit' \
+--color='dark,fg:magenta'"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/mihsam/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
