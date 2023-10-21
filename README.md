@@ -29,6 +29,15 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
+Plugin manager: Packer
+```
+git clone https://github.com/wbthomason/packer.nvim ~/.config/nvim/pack/packer/start/packer.nvim
+
+# inside nvim/base/packer.lua
+:so # to load packer
+:PackerSync
+```
+
 ## From fresh terminal
 ```
 sudo apt update
@@ -43,6 +52,8 @@ sudo apt install git curl bat fzf build-essential
 - fzf
 
 ## Tools
+
+    `sudo apt install xclip` for clipboard support
 - git
     - SSH auth keys
 - make
