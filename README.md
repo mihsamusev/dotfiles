@@ -64,3 +64,15 @@ fzf-preview="fzf --preview 'bat --style=numbers --color=always --line-range :500
 
 search only directories
 fzf-dir="find . -type d | fzf"
+
+
+## Racket
+´´´
+sudo add-apt-repository ppa:plt/racket
+sudo apt update
+sudo apt install racket
+´´´
+
+
+
+
