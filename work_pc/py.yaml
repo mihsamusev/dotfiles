@@ -1,0 +1,17 @@
+name: py
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.12.*
+  - glpk
+  - scip
+  - highs
+  - pip
+  - pip:
+    - numpy
+    - pyomo
+    - pandas
+    - highspy
+    - git+https://github.com/BluePowerPartners/bppdata
+
