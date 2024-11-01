@@ -35,3 +35,4 @@ Plug 'tpope/vim-commentary'
 
 nnoremap <leader>gd :action GotoDeclaration<CR>
 nnoremap <leader>gb :action Back<CR>
+nnoremap <leader>gu :action FindUsages<CR>

@@ -55,7 +55,7 @@ sudo apt install git curl bat fzf build-essential
 
     `sudo apt install xclip` for clipboard support
 - git
-    - SSH auth keys
+    - SSH auth keys `ssh-keygen -t ed25519 -c "some email"` then look in `~/.ssh` for `id_ed25519.pub`
 - make
 - docker
 
@@ -84,6 +84,14 @@ sudo apt update
 sudo apt install racket
 ´´´
 
+## Tools
+- tr - allign symbol separated text into rows ´echo $PATH | tr ":" "\n"´
+- jq - filter json files
+    - `jq '.model.solver' settings.json`
+    - `jq '.model.model_objects[] | {name, type}' -c  settings.json`
 
+- sed - substitute strings
 
-
+## Python cli Tools
+-- pydepstree - debug module dependencies `pydepstree --packages pandas --mermaid`
+-- csvkit - display CSV 
