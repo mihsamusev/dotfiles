@@ -1,5 +1,20 @@
 # My environment configuration
 
+## NVIM Windows without admin using scoop
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+iwr -useb get.scoop.sh | iex
+```
+
+```powershell
+scoop install neovim
+scoop bucket add extras
+scoop install extras/vcredist2022
+```
+
+`nvim` is ready to be called from command line after terminal restart. The location of configs on Windows is `%USERPROFILE%\AppData\Local\nvim` or check from within nvim with `:echo stdpath('config')`
+
+
 ## Locations
 ### Windows
 - config root `~/AppData/Local/nvim`
@@ -63,11 +78,6 @@ sudo apt install git curl bat fzf build-essential
 - python
 - rust
 
-## Windows
-```
-choco install make neovim batcat fzf
-```
-
 
 ## Aliases
 fuzzy search with batcat file preview:
@@ -76,13 +86,6 @@ fzf-preview="fzf --preview 'bat --style=numbers --color=always --line-range :500
 search only directories
 fzf-dir="find . -type d | fzf"
 
-
-## Racket
-´´´
-sudo add-apt-repository ppa:plt/racket
-sudo apt update
-sudo apt install racket
-´´´
 
 ## Tools
 - tr - allign symbol separated text into rows ´echo $PATH | tr ":" "\n"´
