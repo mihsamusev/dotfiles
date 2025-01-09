@@ -90,3 +90,20 @@ fzf-dir="find . -type d | fzf"
 ## Python cli Tools
 -- pydepstree - debug module dependencies `pydepstree --packages pandas --mermaid`
 -- csvkit - display CSV 
+
+## Language setups
+Kotlin
+
+```bash
+scoop bucket add java
+scoop install kotlin gradle java/openjdk
+```
+
+Restart terminal since /bin got added to paths
+
+```
+kotlin -h
+java -h
+gradle -h
+```
+
