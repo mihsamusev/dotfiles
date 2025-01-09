@@ -1,6 +1,8 @@
 # My environment configuration
 
 ## NVIM Windows without admin using scoop
+- Microsoft Store -> PowerToys -> remap SHIFT to CTRL
+
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 iwr -useb get.scoop.sh | iex
@@ -31,37 +33,11 @@ git clone https://github.com/wbthomason/packer.nvim $NVIM_HOME/pack/packer/start
 ```
 
 
-## Locations
-### Windows
-- config root `~/AppData/Local/nvim`
-- plug `~/AppData/Local/nvim/autoload`
-- installed plugins `~/AppData/Local/nvim-data`
-
-- Microsoft Store -> PowerToys -> remap SHIFT to CTRL
-
-
-## VSCode
-Non default settings go here on Windows
-- $APPDATA/Code/User/keybindings.json
-- $APPDATA/Code/User/settings.json
-
-Here on Ubuntu
-- $HOME/.config/Code/User/settings.json
-- $HOME/.config/Code/User/settings.json
-
-
-## From fresh terminal
+## Unix
 ```
 sudo apt update
 sudo apt install git curl bat fzf build-essential
 ```
-
-## Console and editors 
-- nvim
-    - Plug usually in $HOME/.local/share/nvim/site/autoload/plug.vim
-    - plugins themself in $/.local/share/nvim/plugged
-- batcat
-- fzf
 
 ## Tools
 
@@ -79,7 +55,8 @@ search only directories
 fzf-dir="find . -type d | fzf"
 
 
-## Tools
+## CLI
+### Unix based
 - tr - allign symbol separated text into rows ´echo $PATH | tr ":" "\n"´
 - jq - filter json files
     - `jq '.model.solver' settings.json`
@@ -87,23 +64,8 @@ fzf-dir="find . -type d | fzf"
 
 - sed - substitute strings
 
-## Python cli Tools
+### Python based
 -- pydepstree - debug module dependencies `pydepstree --packages pandas --mermaid`
 -- csvkit - display CSV 
 
 ## Language setups
-Kotlin
-
-```bash
-scoop bucket add java
-scoop install kotlin gradle java/openjdk
-```
-
-Restart terminal since /bin got added to paths
-
-```
-kotlin -h
-java -h
-gradle -h
-```
-
