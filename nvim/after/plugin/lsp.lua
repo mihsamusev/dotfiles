@@ -3,12 +3,49 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  'rust_analyzer',
+  'lua_ls',
+  'pylsp'
 })
 
 -- Fix Undefined global 'vim'
 lsp.nvim_workspace()
 
+lsp.configure('lua_ls', {
+  settings = {
+    Lua = {
+      runtime = {
+        version = 'LuaJIT',
+      },
+      diagnostics = {
+        globals = { 'vim' },
+      },
+      workspace = {
+        library = vim.api.nvim_get_runtime_file("", true),
+        checkThirdParty = false,
+      },
+      telemetry = {
+        enable = false,
+      },
+    },
+  },
+})
+
+lsp.configure('pylsp', {
+    settings = {
+        pylsp = {
+            plugins = {
+                jedi = {enable = false, environment = vim.fn.getenv("CONDA_PREFIX")},
+                rope = {enabled = true},
+                --rope_autoimport = { enabled = true, memory = true },
+                --rope_completion = { enabled = true },
+                mypy = {enabled = true},
+                black = {enabled = true},
+                isort = {enabled = true},
+                flake8 = {enabled = true, maxLineLength = 88},
+            }
+        }
+    }
+})
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}

@@ -63,6 +63,9 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  -- REPLS
-use 'Olical/conjure'
+  use {
+      'akinsho/toggleterm.nvim',
+      tag='*',
+  }
+
 end)
